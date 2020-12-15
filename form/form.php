@@ -1,3 +1,7 @@
+<script>
+  alert("Thanks for submitting your response");
+</script>
+
 <?php
 $error='';
 $name='';
