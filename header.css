@@ -1,0 +1,186 @@
+<html lang="en" class="no-js">
+<head>
+	<title>Vyasedification</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/studiare-assets.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts/font-awesome/font-awesome.min.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/fonts/elegant-icons/style.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/fonts/iconfont/material-icons.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+	<div id="container">
+		<!-- Header==================================================-->
+		<div class="mainheader" style="background-color: #fbb034;
+background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%) color:black">
+		<header class="clearfix">
+
+			<div class="top-line" style="background-color: #fbb034;
+background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%); color:black">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<p><i class="material-icons" style="color:black">phone</i> <span style="color:black">844-884-78-48</span></p>
+							<p><i class="material-icons" style="color:black">email</i> <span style="color:black">contact@vyasedification.com</span></p>
+						</div>
+						<div class="col-lg-6">
+							<div class="right-top-line">
+								<ul class="top-menu">
+									<li><a href="#" class="btn btn-success text-center" style=" background-color: #e64c11; color:black; margin-top:10px">Pay Online</a></li>
+									<li><a href="about.html" style="color:black"></a></li>
+									<li><a href="blog.html" style="color:black"></a></li>
+									<a href="http://wa.link/5c554v" title="click to open whatsapp chat"> <img src="https://i.ibb.co/N9P0K9H/239px-Whats-App-svg.png" width="50" height="50"/>
+								</ul>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar navbar-expand-lg bg-light" style="background: background-color: #fbb034;
+background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%)">
+				<div class="container">
+
+					<a class="navbar-brand" href="index.html">
+						<img src="images/edifi.png.png"style="width:170px;height:50px" alt="">
+					</a>
+
+					<a href="#" class="mobile-nav-toggle"> 
+						<span></span>
+					</a>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="drop-link">
+								<a class="active" href="about.html">AboutUs</a>
+							</li>
+							<li class="drop-link">
+								<a class="">WhyVyas<i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown">
+									<li><a href="ideas.html">Idea Behind Vyas</a></li>
+									<li><a href="infrastructure.html">Infrastructure & Facilities</a></li>
+									<li><a href="edge.html">Vyas Edge</a></li>
+								</ul>
+							</li>
+							<li class="drop-link">
+								<a href="">Fees<i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown">
+											<li><a href="blog-grid-leftsidebar.html">Fee Master File Classroom</a></li>
+											<li><a href="blog-grid-rightsidebar.html">Fee Online Course</a></li>
+											<li><a href="blog-list-leftsidebar.html">V-Earnest JEE</a></li>
+											<li><a href="blog-list-rightsidebar.html">Scholarship Web</a></li>
+										</ul>
+									
+							</li>
+							<li class="drop-link">
+								<a class="" href="courses.html">Courses</a>
+							</li>
+							<li class="drop-link">
+								<a href="">Students&Parents<i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown">
+									<li><a href="blog.html">Message to Students</a></li>
+									<li><a href="messagetoparents.html">Message to Parents</a></li>
+									<li><a href="dayatvyas.html">A Day at Vyas</a></li>
+									<li><a href="vyas-vs-novyas.html">Vyas vs No Vyas</a></li>
+								</ul>
+									</li>
+									
+							</li>
+							<li class="drop-link">
+								<a href="contact.html">ContactUs<i class=""></i></a>
+								
+							</li>
+							<li class="drop-link">
+								<a href="">VyasOnline<i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown">
+									<li><a href="https://online.vyasedification.com/">IIT-JEE Courses</a></li>
+									<li><a href="https://usp.vyasedification.com/">Unified School</a></li>
+								</ul>
+									</li>
+							<li><a href="form/form.html">Apply Now</a></li>
+						</ul>
+						
+					</div>
+				</div>
+			</nav>
+
+			<div class="mobile-menu">
+				<div class="search-form-box">
+					<form class="search-form">
+						
+					
+					</form>
+				</div>
+				<div class="shopping-cart-box">
+					
+				</div>
+				<nav class="mobile-nav">
+					<ul class="mobile-menu-list">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li class="drop-link">
+							<a href="about.html">About</a>
+							
+						</li>
+						<li class="drop-link">
+							<a href="">Why Vyas</a>
+							<ul class="drop-level">
+									<ul class="drop-level">
+										<li><a href="ideas.html">Ideas behind Vyas</a></li>
+										<li><a href="infrastructure.html">Infrastructure & Facilities</a></li>
+										<li><a href="edge.html">Vyas Edge</a></li>
+								
+									</ul>
+								</ul>
+						</li>
+						
+						<li class="drop-link">
+							<a href="">Fees</a>
+							<ul class="drop-level">
+									<ul class="drop-level">
+										<li><a href="blog-grid-leftsidebar.html">Fee Mater File Classroom</a></li>
+										<li><a href="blog-grid-rightsidebar.html">Fee Online Course</a></li>
+										<li><a href="blog-list-leftsidebar.html">V-Earnest JEE</a></li>
+										<li><a href="blog-list-rightsidebar.html">Scholarship Web</a></li>
+									</ul>
+								</ul>
+						</li>
+						<li class="drop-link">
+							<a href="courses.html">Courses</a>
+						</li>
+						<li class="drop-link">
+							<a href="">Students & Parents</a>
+							<ul class="drop-level">
+									<ul class="drop-level">
+										<li><a href="blog.html">Message to Students</a></li>
+										<li><a href="messagetoparents.html">Message to Parents</a></li>
+										<li><a href="dayatvyas.html">A Day at Vyas</a></li>
+										<li><a href="vyas-vs-novyas.html">Vyas vs No Vyas</a></li>
+									</ul>
+								</ul>
+						</li>
+						<li class="drop-link">
+							<a href="contact.html">ContactUs</a>
+						</li>
+						<li class="drop-link">
+							<a href="">Vyas Online</a>
+							<ul class="drop-level">
+									<ul class="drop-level">
+										<li><a href="https://online.vyasedification.com/">IIT-JEE Courses</a></li>
+										<li><a href="https://usp.vyasedification.com/">Unified School</a></li>
+									
+									</ul>
+								</ul>
+						</li>
+						<li class="drop-link">
+							<a href="form/form.html">Apply Now</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
