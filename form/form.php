@@ -27,7 +27,7 @@
   <script>
       function thank(){
         alert("Thanks for submitting your response");
-        window.location.href("form/html")
+        window.location.href("form.html")
       }
   </script>
 <body>
