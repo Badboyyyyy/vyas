@@ -18,33 +18,32 @@
 	</head>
   <style>
     body{
+      width:100%;
       background-color: #fbb034;
      background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
     }
   </style>
   <script>
-      function thank()
-      {
-         if (window.confirm('Are you sure,you wnat to submitt')) 
-             {
-                  window.location.href='https://badboyyyyy.github.io/vyas/index.html';
-               };
+      function thank(){
+        alert("Thamks for submitting your response");
+        window.location.replace("form.html");
+        </script>
       }
-  </script>
 <body>
   <div class="row">
-    <div class="col-4" style="width:20vw;">
-      <a class="navbar-brand" href="../index.html">
-            <img src="../images/edifi.png.png"style="width:170px;height:50px" alt="">
-      </a>
-      <img src="../images/form1.svg">
+
+    <div class="col-6">
+          <a class="navbar-brand" href="../index.html">
+                <img src="../images/edifi.png.png"style="width:170px;height:50px" alt="">
+          </a>
+          <img src="../images/form1.svg">
     </div>
-    <div class="col-8" style="width:80vw">
+    <div class="col-6">
       <form action="form.php" method="POST" enctype="multipart/form-data">
 	      <div class="card card-body" style="margin:2em; background-color:black; opacity: 0.8; color:white">
 	             
 	             <h3 class="card-header text-center" style=" background-color: #fbb034;
-     background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);">Personal info</h3>
+                   background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);">Personal info</h3>
                         <div class="form-group add_top_30">
                             <label for="email">Email Address</label>
                             <input type="email" name="email" id="email" class="form-control required" style="border-radius:15px">
@@ -116,7 +115,7 @@
                         	</div>
                         </div>
 	                        <input type="submit" name="submit" class="btn btn-success" onclick="thank()" name="" style=" background-color: #fbb034;
-     background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);">
+                        background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);">
 	                        
 	         </div>
 	    </form>
