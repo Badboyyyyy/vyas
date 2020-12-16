@@ -40,6 +40,11 @@ $testdate='';
          'testdate' => $testdate,
         );
        fputcsv($file_open, $form_data);
+       ?>
+       <script>
+         alert("your data submitted successfully");
+       </script>
+       <?php
       header("location: form.html");
   }
 ?> 
