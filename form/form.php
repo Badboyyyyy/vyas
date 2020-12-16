@@ -46,10 +46,8 @@ $testdate='';
          'testdate' => $testdate,
         );
        fputcsv($file_open, $form_data);
-     
-  }
-?>
- <script>
+     ?>
+     <script>
        
          var confirmation=confirm("Do you wnat to apply");
          if(confirmation==true){
@@ -57,6 +55,11 @@ $testdate='';
          }
   
        </script>
+       <?php
+  }
+
+?>
+ 
    </body>
    </html>   
       
