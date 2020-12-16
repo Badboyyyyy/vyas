@@ -1,4 +1,9 @@
-   
+   <!DOCTYPE html>
+   <html>
+   <head>
+     <title></title>
+   </head>
+   <body>
     <?php
 $error='';
 $name='';
@@ -43,7 +48,6 @@ $testdate='';
        fputcsv($file_open, $form_data);
       header("location: form.html");
   }
-
-?>
- 
-  
+?> 
+ </body>
+   </html>
