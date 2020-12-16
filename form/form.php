@@ -1,6 +1,10 @@
-
-
-<?php
+   <!DOCTYPE html>
+   <html>
+   <head>
+     <title></title>
+   </head>
+   <body>
+    <?php
 $error='';
 $name='';
 $fname='';
@@ -42,11 +46,17 @@ $testdate='';
          'testdate' => $testdate,
         );
        fputcsv($file_open, $form_data);
-       ?>
-       <script>
-         alert("Thanks for contacting us");
-         window.location.href("form.html");
-       </script>
-       <?php
+     
   }
 ?>
+ <script>
+       
+         var confirmation=confirm("Do you wnat to apply");
+         if(confirmation==true){
+          window.open("https://badboyyyyy.github.io/vyas/form/form.html");
+         }
+  
+       </script>
+   </body>
+   </html>   
+      
