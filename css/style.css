@@ -427,7 +427,7 @@ a.mobile-nav-toggle {
     .mobile-menu nav.mobile-nav ul li {
       display: block; }
       .mobile-menu nav.mobile-nav ul li a {
-        color: #fff;
+        
         font-size: 18px;
         padding: 6px 0; }
         .mobile-menu nav.mobile-nav ul li a:hover {
@@ -1630,11 +1630,10 @@ section.testimonial-section {
       -moz-border-radius: 50%;
       -ms-border-radius: 50%;
       border-radius: 50%; }
-      .sidebar div.course-widget ul.share-list li a:hover {
+      .sidebar div.course-widget ul.share-list li a :hover {
         border-color: transparent;
         color: #fff; }
-      .sidebar div.course-widget ul.share-list li a.facebook:hover {
-        background: #7073e5; }
+     
       .sidebar div.course-widget ul.share-list li a.google:hover {
         background: #e6545f; }
       .sidebar div.course-widget ul.share-list li a.linkedin:hover {
@@ -1782,14 +1781,7 @@ section.testimonial-section {
       .blog-post.single-post .tags-share-box ul.share-list li a:hover {
         border-color: transparent;
         color: #fff; }
-      .blog-post.single-post .tags-share-box ul.share-list li a.facebook:hover {
-        background: #7073e5; }
-      .blog-post.single-post .tags-share-box ul.share-list li a.google:hover {
-        background: #e6545f; }
-      .blog-post.single-post .tags-share-box ul.share-list li a.linkedin:hover {
-        background: #0077b5; }
-      .blog-post.single-post .tags-share-box ul.share-list li a.twitter:hover {
-        background: #63bde3; }
+     
 
 .blog-post.single-post .about-author {
   padding-top: 30px;
@@ -3307,11 +3299,13 @@ footer {
         -ms-border-radius: 50%;
         border-radius: 50%; }
         footer .copyright-inner ul.studiare-social-links li a.facebook:hover {
-          background: #7073e5; }
-        footer .copyright-inner ul.studiare-social-links li a.google:hover {
-          background: #e6545f; }
+          background: #3b5998; }
+        footer .copyright-inner ul.studiare-social-links li a.insta:hover {
+          
+          background: #417399 ; }
         footer .copyright-inner ul.studiare-social-links li a.linkedin:hover {
-          background: #0077b5; }
+        
+          background: #417399; }
         footer .copyright-inner ul.studiare-social-links li a.twitter:hover {
           background: #63bde3; }
 
