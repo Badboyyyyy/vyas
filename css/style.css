@@ -3296,9 +3296,9 @@ footer {
        }
 
 .social-icon ul li a{
-  width:35px;
-  height: 35px;
-   padding:7px 9px;
+  width:37px;
+  height: 37px;
+   padding:7px 11px;
   background-color:#11477c;
   border-radius:50%;
   border:1px solid #999;
@@ -3306,7 +3306,7 @@ footer {
 .social-icon ul li a{
   color:white !important;
 }
-.social-icon ul li a .fa-facebook-f:hover{
+.social-icon ul li a .fa-facebook:hover{
   color:#3b4998;
 }
 .social-icon ul li a .fa-instagram:hover{
