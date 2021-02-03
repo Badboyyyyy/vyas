@@ -1975,14 +1975,8 @@ section.teachers-section {
           section.teachers-section .profile-image ul.social-links li a:hover {
             border-color: transparent;
             color: #fff; }
-          section.teachers-section .profile-image ul.social-links li a.facebook:hover {
-            background: #7073e5; }
-          section.teachers-section .profile-image ul.social-links li a.google:hover {
-            background: #e6545f; }
-          section.teachers-section .profile-image ul.social-links li a.linkedin:hover {
-            background: #0077b5; }
-          section.teachers-section .profile-image ul.social-links li a.twitter:hover {
-            background: #63bde3; }
+         
+
   section.teachers-section .profile-details {
     background-color: #fff;
     padding: 30px;
@@ -2593,14 +2587,7 @@ section.single-event-section {
           section.single-event-section .single-event-box .event-content ul.share-list li a:hover {
             border-color: transparent;
             color: #fff; }
-          section.single-event-section .single-event-box .event-content ul.share-list li a.facebook:hover {
-            background: #7073e5; }
-          section.single-event-section .single-event-box .event-content ul.share-list li a.google:hover {
-            background: #e6545f; }
-          section.single-event-section .single-event-box .event-content ul.share-list li a.linkedin:hover {
-            background: #0077b5; }
-          section.single-event-section .single-event-box .event-content ul.share-list li a.twitter:hover {
-            background: #63bde3; }
+        
   section.single-event-section .single-event-box #map {
     height: 280px; }
 
@@ -3298,17 +3285,42 @@ footer {
         -moz-border-radius: 50%;
         -ms-border-radius: 50%;
         border-radius: 50%; }
-        footer .copyright-inner ul.studiare-social-links li a.facebook:hover {
-          background: #3b5998; }
-        footer .copyright-inner ul.studiare-social-links li a.insta:hover {
-          
-          background: #417399 ; }
-        footer .copyright-inner ul.studiare-social-links li a.linkedin:hover {
-        
-          background: #417399; }
-        footer .copyright-inner ul.studiare-social-links li a.twitter:hover {
-          background: #63bde3; }
+        .social-icon ul{
+          display: flex;
+          list-style: none;
+          justify-content: flex-end;
+        }
+       
+       .social-icon ul li{
+        margin:10px;
+       }
 
+.social-icon ul li a{
+  width:35px;
+  height: 35px;
+   padding:7px 9px;
+  background-color:#11477c;
+  border-radius:50%;
+  border:1px solid #999;
+}
+.social-icon ul li a{
+  color:white !important;
+}
+.social-icon ul li a .fa-facebook-f:hover{
+  color:#3b4998;
+}
+.social-icon ul li a .fa-instagram:hover{
+  color:#2C6A93;
+}
+.social-icon ul li a .fa-youtube:hover{
+  color:#C31A1E;
+}
+.social-icon ul li a .fa-telegram:hover{
+  color:#3b4998;
+}
+.social-icon ul li a .fa-linkedin-in:hover{
+   color:#0e76a8;
+}
 @media (max-width: 767px) {
   footer .copyright-inner {
     flex-direction: column; }
