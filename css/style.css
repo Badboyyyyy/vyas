@@ -591,8 +591,7 @@ button.mfp-close, button.mfp-arrow, a.zoom {
   outline: none; }
 
 section.page-banner-section {
-  background-color: #f8f9fa;
-  padding-top: 40px; }
+ margin-top:8vh; }
   section.page-banner-section h1 {
     margin-bottom: 5px; }
   section.page-banner-section ul.page-depth li {
