@@ -174,7 +174,9 @@ s0.parentNode.insertBefore(s1,s0);
                          #pp {
                          	display: block;
                          }
-
+                        #rep{
+                        	font-size:15px;
+                        }
 					}
 					
 				</style>
@@ -182,15 +184,27 @@ s0.parentNode.insertBefore(s1,s0);
 <body>
 		<div class="modal fade" id="mymodal" style="text-align:center; margin:auto">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header" style="background:#ffad06; color:white; opacity:0.7">
-        <h5 class="modal-title">Vyas Edification</h5>
+    <div class="modal-content" style="background:rgb(255, 219, 97);">
+      <div class="modal-header" style="color:white; opacity:0.7; margin-top:1em">
+        <h5 class="modal-title"><img src="images/edifi.png.png" style="width:160px; height:auto"></h5>
+        <h3 style="display:block; margin-left:auto; font-weight:1000; color:rgb(117, 24, 4 )">मेरी सफलता, मेरा विश्वास,<br> अपना VYAS</h3>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body bg-dark text-white"  id="ff" style="font-weight:bold;">
-      	<form  action="form/rv.php" method="POST">
+      <div class="modal-body text-white"  id="ff" style="font-weight:bold; margin:0px; padding:0px">
+      	<div class="top p-2" style="background-color:#023B09;">
+      		
+      		<div class="to" style="display:flex; justify-content: space-between; box-sizing:border-box">
+      		<div class="left">
+      			<h3 style="text-align:center; color:white; font-weight:1000;">Appear Online</h3>
+      			<h1><span class="display-4" style="color:rgb(239, 239, 7 ); font-weight:1000">VYAS</span> <span id="rep" style="color:white"> Scholarship Admission Test<span style="color:rgb(239, 239, 7 ); font-weight:900"> {V-SAT}</span></h1>
+      		</div>
+      		<div class="right" style="margin-top:40px; margin-left:auto"><p style="color:rgb(239, 239, 7)">Upto<span class="display-4" style="font-weight:1000">90%</span></p><p style="color:white; font-weight:1000; font-size:22px">Scholarship</p></div>
+         	</div>
+         	<h3 style="border:3px solid black; border-radius:50px; padding:10px; width:50%; margin:auto; background-color:rgb(255, 219, 97); text-align:center; color:rgb(220, 25, 9); font-weight:bold">Exam Date : 14 Feb 2021</h3>
+      	</div>
+      	<form  action="form/rv.php" method="POST" class="p-4" style="color:black; font-weight:bold">
 						<div>
 						<label>Please enter your name</label> &nbsp; &nbsp;
 						<input type="text" name="name">
@@ -203,12 +217,14 @@ s0.parentNode.insertBefore(s1,s0);
 					   	<label>Please enter your class</label> &nbsp; &nbsp; &nbsp;
 					   	<input type="text" name="email">
 					   </div>	   
-					
+					 <button type="button" class="btn btn-danger" data-dismiss="modal" style="float:right; margin:10px">Close</button>
+        <input type="submit" name="submit" value="save" class="btn btn-success"  style="float:right; margin:10px" onclick="validate()">
        
       </div>
-      <div class="modal-footer" style="background:#ffad06; color:white; opacity:0.7">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        <input type="submit" name="submit" value="save" class="btn btn-success" onclick="validate()">
+      <div class="modal-footer" style="background-color:#023B09; color:white; opacity:0.7">     
+   
+      	<h4 style="color:white; font-weight:bold; margin-right:auto">Call : 8306007350, 51, 52, 53</h4>
+      	<p  style="color:white; margin-right:auto">Timing : 9 AM to 6 PM </p>
       </div>
   </form>
     </div>
@@ -289,6 +305,7 @@ s0.parentNode.insertBefore(s1,s0);
 									
 								</ul>
 									</li>
+									<li><a href="https://forms.gle/yFkV6HrR3YQwnwPt5">Career</a></li>
 							<li><a href="https://wa.me/message/FLAQUTPF7353K1" target="_blank"><i class="fab fa-whatsapp fa-7x" style="font-size:32px; color:white"></i></a></li>
 							<a href="form/form.php"><img src="images/appf.png" style="width:80px;"></a>
 						</ul>
@@ -351,6 +368,7 @@ s0.parentNode.insertBefore(s1,s0);
 									
 								</ul>
 									</li>
+									<li><a href="https://forms.gle/yFkV6HrR3YQwnwPt5">Career</a></li>
 							<li><a href="https://wa.me/message/FLAQUTPF7353K1" target="_blank"><i  class="fab fa-whatsapp fa-7x" style="font-size:32px; color:white"></i></a></li>
 
 						</ul>
