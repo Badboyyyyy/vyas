@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Potenza - Job Application Form Wizard with Resume upload and Branch feature">
     <meta name="author" content="Ansonika">
-    <title> VyasEdification</title>
+    <title> Vyas Edification</title>
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -22,6 +22,8 @@
       width:100vw;
       height: 100vh;
       background-image:url("bk4.jpg");
+      background-size: cover;
+      background-image:no-repeat;
     }
      .container{
       margin:0px;
@@ -121,12 +123,12 @@
                         </div>
                         <div class="form-group">
                             <label for="Name">Name</label>
-                            <input type="text" name="name" id="Name" class="form-control" style="border-radius:15px">
+                            <input type="text" name="name" id="Name" class="form-control" placeholder="Please enter your name" style="border-radius:15px">
                             <p id="demo1" style="color:red"></p>
                         </div>
                         <div class="form-group">
                             <label for="Fname">Father's name</label>
-                            <input type="text" name="fname" id="Fname" class="form-control"  style="border-radius:15px">
+                            <input type="text" name="fname" id="Fname" class="form-control" placeholder="Please enter your father name"  style="border-radius:15px">
                         </div>
                         <div class="btn-box">
                           <button type="button" id="next1">Next</button>
@@ -136,11 +138,11 @@
                           <h3>Contact Details</h3>
                         <div class="form-group">
                           <label for="Pnumber">Phone Number</label>
-                          <input type="number" name="pnumber" id="Pnumber" class="form-control"  style="border-radius:15px">
+                          <input type="number" name="pnumber" id="Pnumber" class="form-control"  placeholder="Please enter your phone number" style="border-radius:15px">
                         </div>
                         <div class="form-group">
                           <label for="Wnumber">Whatsapp Number</label>
-                          <input type="number" name="wnumber" id="Wnumber" class="form-control"  style="border-radius:15px">
+                          <input type="number" name="wnumber" id="Wnumber" class="form-control"  placeholder="Please enter your whatsapp number" style="border-radius:15px">
                         </div>
                         <div class="form-group">
                           <label for="">Targeting For</label>

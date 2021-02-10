@@ -496,6 +496,28 @@ a.mobile-nav-toggle {
 /*------------------------------------------------- */
 /* =  General */
 /*------------------------------------------------- */
+.blog{
+  margin-top:7vh;
+  background-image:url("../images/blog.jpg");
+  background-size:cover;
+
+ 
+}
+.jumbotron{
+  background-color:#55ad06;
+  opacity: 0.4;
+  width:100vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+.Analysis{
+  margin-top:11vh;
+}
+
 #container {
   opacity: 0;
   transition: all 0.5s ease-in-out;
