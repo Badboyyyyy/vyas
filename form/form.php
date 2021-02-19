@@ -112,7 +112,7 @@
                 <img src="../images/edifi.png.png"style="width:170px;height:50px" alt="">
      </a>
    </header>
-   <div class="container">
+   <div class="container" id= "fff">
       <form action="" method="POST" enctype="multipart/form-data">
         <div id="form1">
              <h3>Personal info</h3>
@@ -260,10 +260,7 @@
        document.getElementById("progress").style.width="240px";
      }
   </script>
-</body>
-</html>
-
-<?php
+  <?php
 $error='';
 $email='';
 $name='';
@@ -311,10 +308,28 @@ $roll= '';
          'rollNumber' =>$roll
         );
        fputcsv($file_open, $form_data);    
+        $email=($_POST["email"]);
+     $name=($_POST["name"]);
+     $fname=($_POST["fname"]);
+     $pnumber=($_POST["pnumber"]);
+     $wnumber=($_POST["wnumber"]);
+     $roll= rand(1,1000);
+     $target=($_POST["target"]);
+     $class=($_POST["class"]);
+     $programe=($_POST["programe"]);
+     $testdate=($_POST["testdate"]);
+
        ?>
         <script>
         swal("Thanks", "Your roll number is '<?php echo $roll ?> ", "success");
       </script>
        <?php
+
   }
+
+    
+         
 ?> 
+</body>
+</html>
+
