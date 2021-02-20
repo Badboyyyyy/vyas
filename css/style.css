@@ -660,7 +660,7 @@ section.page-banner-section {
 
 #home-section {
   height: 600px;
-  /*background-image: url('upload/slider/slider-image-n.png');*/
+ /* background-image: url('upload/slider/slider-image-n.png');*/
   overflow: hidden;
   background: ; }
   #home-section .tp-shapewrapper {
@@ -1235,9 +1235,7 @@ section.events-section {
   .video-post.small-post a.video-link {
     width: 40px;
     height: 40px;
-    line-height: 40px;
-    margin-top: -30px;
-    margin-left: -20px; }
+   }
 
 /*------------------------------------------------- */
 /* =  News sections */
