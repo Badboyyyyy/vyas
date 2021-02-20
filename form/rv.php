@@ -21,7 +21,7 @@
 
 $name='';
 $number='';
-$email='';
+$class='';
    function clean_text($string){
       $string=trim($string);
       $string=stripslashes($string);
@@ -33,7 +33,7 @@ $email='';
      $name=clean_text($_POST["name"]);
    
      $number=clean_text($_POST["mobile"]);
-     $email= clean_text($_POST["email"]);
+     $class= clean_text($_POST["email"]);
     
      $file_open=fopen("rv.csv", "a");
      $no_row=count(file("rv.csv"));
@@ -45,7 +45,7 @@ $email='';
         'name' => $name,
         
          'number' => $number,
-         'email' => $email,
+         'class' => $email,
          
         );
        fputcsv($file_open, $form_data);    

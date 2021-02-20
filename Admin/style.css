@@ -48,6 +48,13 @@ body {
   padding: 16px;
 }
 
+.admin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border:2px solid black;
+  box-shadow: 8px 8px 4px 5px lightgrey;
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}

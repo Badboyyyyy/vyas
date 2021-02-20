@@ -17,7 +17,9 @@
 
 </head>
 <body>
-<form name="form" method="post" action="#">
+	<div class="container">
+		<div class="admin">
+			<form name="form" method="post" action="#">
 
 <div class="container col-md-4">
 
@@ -40,6 +42,9 @@
 </div>
 	
 </form>
+
+		</div>
+	</div>
 <?php
 $conn = mysqli_connect("localhost","root","");
 mysqli_select_db($conn, 'vyas');
@@ -51,12 +56,14 @@ $user=$_POST['user'];
 
 $pass=$_POST['pass'];
 
-$insert=("INSERT INTO `vyas`.`vyas` ( `user`, `pass`) VALUES ('$user', '$pass ');");
+$insert=("INSERT INTO `vyas` ( `user`, `pass`) VALUES ('$user', '$pass ');");
+$q = mysqli_query($conn, $insert);
 
 
-if ($insert) {
- echo"<script>alert('login successfully')</script>";
+if ($q) {
+ echo '<script> alert("login successfully");</script>';
  header('location:index.php');
+ 
 }
 else{
 	echo "Failed try again";
