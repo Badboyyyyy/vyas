@@ -660,7 +660,7 @@ section.page-banner-section {
 
 #home-section {
   height: 600px;
-  background-image: url('upload/slider/slider-image-n.png');
+  /*background-image: url('upload/slider/slider-image-n.png');*/
   overflow: hidden;
   background: ; }
   #home-section .tp-shapewrapper {
