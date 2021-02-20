@@ -195,33 +195,45 @@ s0.parentNode.insertBefore(s1,s0);
 <body>
 		<div class="modal fade" id="mymodal" style="text-align:center; margin:auto">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header" style="background:#ffad06; color:white; opacity:0.7">
-        <h5 class="modal-title">Vyas Edification</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body bg-dark text-white"  id="ff" style="font-weight:bold;">
-      	<form  action="form/rv.php" method="POST">
-						<div>
-						<label>Please enter your name</label> &nbsp; &nbsp;
-						<input type="text" name="name">
-				     	</div>
-					    <div>
-					   	<label>Please enter your number</label>
-					   	<input type="number" name="mobile">
-					    </div>
-					   <div>
-					   	<label>Please enter your gmail id</label>
-					   	<input type="email" name="email">
-					   </div>	   
-					
+    <div class="modal-content" style="background:rgb(255, 219, 97);">
+      <div class="modal-header" style="color:white; opacity:0.7; margin-top:1em">
+        <h5 class="modal-title"><img src="images/edifi.png.png" style="width:160px; height:auto"></h5>
+        <h3 style="display:block; margin-left:auto; font-weight:1000; color:rgb(117, 24, 4 )">मेरी सफलता, मेरा विश्वास,<br> अपना VYAS</h3>
        
       </div>
-      <div class="modal-footer" style="background:#ffad06; color:white; opacity:0.7">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        <input type="submit" name="submit" value="save" class="btn btn-success" onclick="validate()">
+      <div class="modal-body text-white"  id="ff" style="font-weight:bold; margin:0px; padding:0px">
+      	<div class="top p-2" style="background-color:#023B09;">
+      		
+      		<div class="to" style="display:flex; justify-content: space-between; box-sizing:border-box">
+      		<div class="left">
+      			<h3 style="text-align:center; color:white; font-weight:1000;">Appear Online</h3>
+      			<h1><span class="display-4" style="color:rgb(239, 239, 7 ); font-weight:1000">VYAS</span> <span id="rep" style="color:white"> Scholarship Admission Test<span style="color:rgb(239, 239, 7 ); font-weight:900"> {V-SAT}</span></h1>
+      		</div>
+      		<div class="right" style="margin-top:40px; margin-left:auto"><p style="color:rgb(239, 239, 7)">Upto<span class="display-4" style="font-weight:1000">90%</span></p><p style="color:white; font-weight:1000; font-size:22px">Scholarship</p></div>
+         	</div>
+         	<h3 id="date" style="border:3px solid black; border-radius:50px; padding:10px; width:50%; margin:auto; background-color:rgb(255, 219, 97); text-align:center; color:rgb(220, 25, 9); font-weight:bold">Exam Date : 14 Feb 2021</h3>
+      	</div>
+      	<form  action="form/rv.php" method="POST" class="p-4" style="color:black; font-weight:bold">
+						<div class="formm">
+						<label>Please enter &nbsp; your &nbsp; name</label> &nbsp; &nbsp;
+						<input type="text" name="name">
+				     	</div class="fonmm">
+					    <div>
+					   	<label>Please enter your number</label> &nbsp; &nbsp;
+					   	<input type="number" name="mobile">
+					    </div>
+					   <div class="formm">
+					   	<label>Please enter &nbsp; your &nbsp; class</label> &nbsp; &nbsp; &nbsp;
+					   	<input type="text" name="email">
+					   </div>	   
+					 <button type="button" class="btn btn-danger" data-dismiss="modal" style="float:right; margin:10px">Close</button>
+        <input type="submit" name="submit" value="save" class="btn btn-success"  style="float:right; margin:10px" onclick="validate()">
+       
+      </div>
+      <div class="modal-footer" style="background-color:#023B09; color:white;">     
+   
+      	<h4 style="color:white; font-weight:bold; margin-right:auto">Call : 8306007350, 51, 52, 53</h4>
+      	<p  style="color:white; margin-right:auto">Timing : 9 AM to 6 PM </p>
       </div>
   </form>
     </div>
@@ -232,7 +244,7 @@ s0.parentNode.insertBefore(s1,s0);
 		
 	
 		<!--------------------------------------------------Fixed Apply Now----------------------------------------->
-         <a href="form/form.php"><img src="images/app.png"  id="pp" style="position:fixed; width:60px;  height:60px; top:70%; right:-1%; z-index:210;"></a>
+        <a href="form/form.php"><img src="images/app.png" id="pp" style="position:fixed; width:60px; height: 60px; top:10%; right:-1%; z-index:210; display:none"></a>
          <!--------------------------------------------------Fixed Apply now end----------------------------------------->
 		
 		<!-- Header==================================================-->
@@ -241,76 +253,77 @@ s0.parentNode.insertBefore(s1,s0);
 			<nav class="navbar navbar-expand-lg fixed-top" id="mnav">
 			
 
-				<a class="navbar-brand" href="index.html">
-					<img src="images/edifi.png.png" id= "logo" style="width:160px; height:auto" alt="">
-				</a>
+					<a class="navbar-brand" href="index.html">
+						<img src="images/edifi.png.png" id= "logo" style="width:160px; height:auto" alt="">
+					</a>
 
-				<a href="#navmob" class="mobile-nav-toggle" data-toggle="collapse" > 
-					<span></span>
-				</a>
+					<a href="#navmob" class="mobile-nav-toggle" data-toggle="collapse" > 
+						<span></span>
+					</a>
 
-				<div class="collapse navbar-collapse">
-					<ul class="navbar-nav mr-auto">
-						<li class="drop-link">
-							<a class="active" href="about.html">AboutUs</a>
-						</li>
-						<li class="drop-link">
-							<a href="#" class="">WhyVyas<i class="fa fa-angle-down"></i></a>
-							<ul class="dropdown">
-								<li><a href="ideas.html"><sapn style="color:black !important">Idea Behind Vyas</sapn></a></li>
+					<div class="collapse navbar-collapse">
+						<ul class="navbar-nav mr-auto">
+							<li class="drop-link">
+								<a class="active" href="about.html">AboutUs</a>
+							</li>
+							<li class="drop-link">
+								<a href="#" class="">WhyVyas<i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown">
+									<li><a href="ideas.html"><sapn style="color:black !important">Idea Behind Vyas</sapn></a></li>
+									
+									<li><a href="edge.html" style="color:black">Vyas Edge</a></li>
+								</ul>
+							</li>
+							<li class="drop-link">
+								<a href="">Fees<i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown">
+											
+											<li><a href="blog-grid-rightsidebar.html">Fee Classroom Program</a></li>
+											
+											<li><a href="blog-list-rightsidebar.html">Scholarship Web</a></li>
+										</ul>
+									
+							</li>
+							<li class="drop-link">
+								<a class="courses.html" href="courses.html">Courses</a>
+							</li>
+							<li class="drop-link">
+								<a href="">Students&Parents<i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown">
+									<li><a href="blog.html">Message to Students</a></li>
+									<li><a href="messagetoparents.html">Message to Parents</a></li>
+									<li><a href="dayatvyas.html">A Day at Vyas</a></li>
+									<li><a href="vyas-vs-novyas.html">Vyas vs No Vyas</a></li>
+								</ul>
+									</li>
+									
+							</li>
+							<li class="drop-link">
+								<a href="contact.html">ContactUs<i class=""></i></a>
 								
-								<li><a href="edge.html" style="color:black">Vyas Edge</a></li>
-							</ul>
-						</li>
-						<li class="drop-link">
-							<a href="#" class="">Fees<i class="fa fa-angle-down"></i></a>
-							<ul class="dropdown">
-										
-										<li><a href="blog-grid-rightsidebar.html">Fee Classroom Program</a></li>
-										
-										<li><a href="blog-list-rightsidebar.html">Scholarship Web</a></li>
-									</ul>
+							</li>
+							<li class="drop-link">
 								
+							<a href="https://rzp.io/l/z43ppg1nV"><b>V-Sat</b></a>
+							<div class="blink" id="#blink"><span style="font-weight:bold"> Pay Online</span> </div>
 						</li>
-						<li class="drop-link">
-							<a class="courses.html" href="courses.html">Courses</a>
-						</li>
-						<li class="drop-link">
-							<a href="#">Students&Parents<i class="fa fa-angle-down"></i></a>
-							<ul class="dropdown">
-								<li><a href="blog.html">Message to Students</a></li>
-								<li><a href="messagetoparents.html">Message to Parents</a></li>
-								<li><a href="dayatvyas.html">A Day at Vyas</a></li>
-								<li><a href="vyas-vs-novyas.html">Vyas vs No Vyas</a></li>
-							</ul>
-								</li>
-								
-						</li>
-						<li class="drop-link">
-							<a href="contact.html">ContactUs<i class=""></i></a>
-							
-						</li>
-						<li class="drop-link">
-							
-						<a href="https://rzp.io/l/z43ppg1nV"><b>V-Sat</b></a>
-						<div class="blink" id="#blink"><span style="font-weight:bold"> Pay Online</span> </div>
-					</li>
-						<li class="drop-link">
-							<a href="#">VyasOnline<i class="fa fa-angle-down"></i></a>
-							<ul class="dropdown">
-								<li><a href="https://online.vyasedification.com/">IIT-JEE Courses</a></li>
-								
-							</ul>
-								</li>
-								<li><a href="https://forms.gle/yFkV6HrR3YQwnwPt5">Career</a></li>
-						<li><a href="https://wa.me/message/FLAQUTPF7353K1" target="_blank"><i class="fab fa-whatsapp fa-7x" style="font-size:32px; color:white"></i></a></li>
-						<a href="form/form.php"><img src="images/appf.png" style="width:80px;"></a>
-					</ul>
-					
-				</div>
-			
-		</nav>
-			<div class="collapse navbar-collapse" id="navmob">
+							<li class="drop-link">
+								<a href="">VyasOnline<i class="fa fa-angle-down"></i></a>
+								<ul class="dropdown">
+									<li><a href="https://online.vyasedification.com/">IIT-JEE Courses</a></li>
+									
+								</ul>
+									</li>
+									<li><a href="https://forms.gle/yFkV6HrR3YQwnwPt5">Career</a></li>
+							<li><a href="https://wa.me/message/FLAQUTPF7353K1" target="_blank"><i class="fab fa-whatsapp fa-7x" style="font-size:32px; color:white"></i></a></li>
+													<a href="form/form.php" class="btn btn-success" style="height:50px; margin-top:30px; padding:13px">Apply Now</a>
+						<a href="https://rzp.io/l/WlTsUbi" class="btn btn-primary" style="height:50px; margin-top:30px; margin-left:5px; padding:14px">Pay Online</a>
+						</ul>
+						
+					</div>
+				
+			</nav>
+				<div class="collapse navbar-collapse" id="navmob">
 				
 				<nav class="mobile-nav">
 					<ul class="navbar-nav mr-auto">

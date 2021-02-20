@@ -1,10 +1,10 @@
 
-var CLOUDINARY_URL = "https://api.cloudinary.com/v1_1/dpfvooxcp/upload";
+   var CLOUDINARY_URL = "https://api.cloudinary.com/v1_1/dpfvooxcp/upload";
 	var CLOUDINARY_UPLOAD_PRESET = "dwc2sn1g"
 	var imgPreview = document.getElementById('img-preview');
 	var fileUpload = document.getElementById('file-upload');
 	
-	fileUpload.addEventListener('change', function(event) {
+	fileUpload.onClick('change', function(event) {
 		var file = event.target.files[0];
 		var formData = new FormData();
 	formData.append('file', file);

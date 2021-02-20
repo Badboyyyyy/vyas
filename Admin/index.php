@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,12 +9,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="cloud.js"></script>
   <link rel="stylesheet"  href="style.css">
 </head>
 <style>
-	#record, #record2{
-		margin-left:350px;
-	}
+	
 	#fff{
 		display: none;
 	}
@@ -58,9 +56,20 @@
 </div>
 </div>
 <div class="col-9">
-<div id="main" style="margin-left:300px !important">
+<div id="main">
 	
-	<span style="font-size:30px; cursor:pointer;" id = "show" onclick="openNav()">&#9776; </span>
+	<span style="font-size:30px; cursor:pointer" id = "show" onclick="openNav()">&#9776; </span>
+	<div class="tab-content">
+  	<div class="tab-pane fade" id="record">
+  		<button type="button" class="btn btn-success btn-lg" id="load_data">Load Data </button>
+ 	      <div id= "employee_table"></div> 
+  	</div>
+  	<div class="tab-pane" id="record2">
+  		<button type="button" class="btn btn-success btn-lg" id="load_data2">Load Data </button>
+ 	     <div id= "employee_table2"></div>
+  	</div>
+  </div>
+ 
 	
 </div>
 </div>
@@ -94,17 +103,7 @@
       </div>
     </div>
   </div>
-  <div class="tab-content">
-  	<div class="tab-pane fade" id="record">
-  		<button type="button" class="btn btn-success btn-lg" id="load_data">Load Data </button>
- 	      <div id= "employee_table"></div> 
-  	</div>
-  	<div class="tab-pane" id="record2">
-  		<button type="button" class="btn btn-success btn-lg" id="load_data2">Load Data </button>
- 	<div id= "employee_table"></div>
-  	</div>
-  </div>
- 
+  
 
 
 
@@ -116,7 +115,7 @@
 				dataType:"text",
 				success:function(data){
 					var employee_data = data.split(/\r?\n|\r/);
-					var table_data = '<table class="table table-bordered table-stripped">';
+					var table_data = '<table class="table table-bordered bg-dark text-white text-center table-stripped">';
 					for (var count=0; count<employee_data.length; count++)
 					{
 						var cell_data = employee_data[count].split(",");
@@ -148,7 +147,7 @@ $("#load_data2").click(function() {
 				dataType:"text",
 				success:function(data){
 					var employee_data = data.split(/\r?\n|\r/);
-					var table_data = '<table class="table table-bordered table-stripped">';
+					var table_data = '<table class="table table-bordered bg-dark text-white text-center table-stripped">';
 					for (var count=0; count<employee_data.length; count++)
 					{
 						var cell_data = employee_data[count].split(",");
@@ -167,7 +166,7 @@ $("#load_data2").click(function() {
 						table_data +='<tr>';
 					}
 					table_data += '</table>';
-					$('#employee_table').html(table_data);
+					$('#employee_table2').html(table_data);
 				}
 			});
 		});
@@ -185,13 +184,14 @@ $("#load_data2").click(function() {
 	formData.append('file', file);
 	formData.append('upload_preset', CLOUDINARY_UPLOAD_PRESET);
 		axios({
-         url : CLOUDINARY_URL,
+         url : CLOUDINARY_URL, 
          method : 'POST',
          headers: {
          	'Content-Type' : 'application/x-www-form-urlencoded'
          },
          data : formData
      }).then(function (res){
+
      	imgPreview.src = res.data.secure_url;
 
      }).catch(function (err){
@@ -201,7 +201,7 @@ $("#load_data2").click(function() {
 	});
 function openNav() {
   document.getElementById("mySidenav").style.width = "350px";
-  document.getElementById("main").style.marginLeft = "350px";
+  
   document.getElementById("show").style.display = "none";
   document.getElementById("close").style.display = "block";
 }
@@ -212,6 +212,12 @@ function closeNav() {
   document.getElementById("close").style.display = "none";
   document.getElementById("show").style.display = "block";
 }
+
+
+
+
+
+
 </script>
    
 </body>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/studiare-assets.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/fonts/elegant-icons/style.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/fonts/iconfont/material-icons.css" media="screen">
+
+</head>
+<style>
+  *{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+  }
+  body{
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  nav{
+    background: #222;
+    padding:0 15px;
+  }
+  nav a{
+    text-decoration: none;
+    color:white;
+  }
+ .menu, .submenu{
+  list-style: none;
+ }
+.logo , .item, .item .button{
+  padding:1rem;
+}
+.item:not(.button) a:hover,
+.item a:hover::after{
+  color:#ccc;
+}
+/* Mobile viwe*/
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li a{
+  display: block;
+  padding: 15px 5px;
+
+}
+.menu li.subitem a{
+  display: block;
+  padding:15px 5px;
+}
+.toggle{
+  font-size: 20px;
+  order:1;
+}
+.item.button{
+  order:2;
+}
+.item{
+  order:3;
+  width:100%;
+  text-align:center;
+  display: none;
+
+}
+.active .item{
+
+  display: block;
+}
+.button.secondary{
+  border-bottom:2px solid #444;
+}
+/* Style Submenu */
+.submenu{
+  display: none;
+}
+.submenu-active .submenu{
+  display: block;
+}
+.has-submenu > a::after{
+  font-family: "font Awesome 5 Free";
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 900;
+  content:"\f078";
+  padding:0.8rem;
+  color:white;
+  text-decoration: none !important;
+}
+.subitem a{
+  padding:10px 15px;
+}
+.submenu-active {
+  background-color:#111;
+  border-radius:3px;
+}
+
+@media all and (min-width:700px){
+  
+  .menu{
+    justify-content: center;
+    z-index: 99999;
+  }
+  .logo{
+    flex: 1;
+  }
+  .item.button{
+     width:auto;
+     order:1;
+    display: block;
+   
+
+  }
+  .toggle{
+    flex:1;
+    text-align: right;
+    order:2;
+  }
+  .menu li .button a{
+    padding:10px 15px;
+    margin:5px 0;
+  }
+  .button a{
+    background: #0080ff;
+    border:1px royalblue solid;
+  }
+  .button.secondary{
+    border:0px;
+  }
+  .button.secondary a{
+     background:transparent;
+     border:1px #0080ff solid;
+  }
+  .button a:hover{
+    text-decoration: none;
+  }
+  .button:not(.secondary)a:hover{
+    background: royalblue;
+    border:darkblue;
+  }
+
+}
+@media all and (min-width:960px){
+
+  .item{
+    order:1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+  .button
+  {
+    order: 2;
+  }
+  .submenu-active .submenu{
+    display: block;
+    position: absolute;
+    left: 0px;
+    top:68px;
+    background: #111;
+  }
+  .toggle{
+    display: none;
+  }
+  .submenu-active{
+    border-radius:0px;
+
+  }
+}
+</style>
+<body>
+  <div class="modal fade" id="mymodal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background:rgb(255, 219, 97);">
+      <div class="modal-header" style="color:white; opacity:0.7;">
+        <h5 class="modal-title"><img src="images/edifi.png.png" style="width:130px;"></h5>
+        <h5 style="display:block; margin-left:auto; font-weight:1000; color:rgb(117, 24, 4 )">मेरी सफलता, मेरा विश्वास,<br> अपना VYAS</h5>
+       
+      </div>
+      <div class="modal-body text-white"  style="font-weight:bold; margin:0px; padding:0px">
+        <div class="top p-2" style="background-color:#023B09;">
+          
+          <div class="to" style="display:flex; justify-content: space-between; box-sizing:border-box">
+          <div class="left">
+            <h3 style="text-align:center; color:white; font-weight:1000;">Appear Online</h3>
+            <h3><span class="display-4" style="color:rgb(239, 239, 7 ); font-weight:1000">VYAS</span> <span style="color:white"> Scholarship Admission Test<span style="color:rgb(239, 239, 7 ); font-weight:900"> {V-SAT}</span></h3>
+          </div>
+          <div class="right" style="margin-top:40px; margin-left:auto"><p style="color:rgb(239, 239, 7)">Upto<span class="display-4" style="font-weight:1000">90%</span></p><p style="color:white; font-weight:1000; font-size:22px">Scholarship</p></div>
+          </div>
+          <h3 id="date" style="border:3px solid black; border-radius:50px; padding:10px;  margin:auto; background-color:rgb(255, 219, 97); text-align:center; color:rgb(220, 25, 9); font-weight:bold">Exam Date : 14 Feb 2021</h3>
+        </div>
+        <form  action="form/rv.php" method="POST" class="p-4" style="color:black; font-weight:bold">
+            <div class="formm">
+            <label>Please enter &nbsp; your &nbsp; name</label> &nbsp; &nbsp;
+            <input type="text" name="name">
+              </div class="fonmm">
+              <div>
+              <label>Please enter your number</label> &nbsp; &nbsp;
+              <input type="number" name="mobile">
+              </div>
+             <div class="formm">
+              <label>Please enter your &nbsp; class</label> &nbsp; &nbsp; &nbsp;
+              <input type="text" name="email">
+             </div>    
+           <button type="button" class="btn btn-danger" data-dismiss="modal" style="float:right; margin:10px">Close</button>
+        <input type="submit" name="submit" value="save" class="btn btn-success"  style="float:right; margin:10px" onclick="validate()">
+       
+      </div>
+      <div class="modal-footer" style="background-color:#023B09; color:white;">     
+   
+        <h4 style="color:white; font-weight:bold; margin-right:auto">Call : 8306007350, 51, 52, 53</h4>
+        <p  style="color:white; margin-right:auto">Timing : 9 AM to 6 PM </p>
+      </div>
+  </form>
+    </div>
+  </div>
+</div>
+  <nav class="fixed-top">
+    <ul class="menu">
+      <li class="logo"><a href="index.html"><img src="images/edifi.png.png" style="width:130px"></a></li>
+      <li class="item"><a href="about.html">About</a></li>
+      <li class="item has-submenu"><a href="#">Why Vyas</a>
+         <ul class="submenu">
+            <li class="subitem"><a href="#">Idea Behind Vyas</a></li>
+            <li class="subitem"><a href="#">Vyas Edge</a></li>
+        </ul>
+      </li>
+      <li class="item has-submenu"><a href="#">Courses Fee</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="#">Fee Classroom Program</a></li>
+          <li class="subitem"><a href="#">Web Scholarship</a></li>
+        </ul>
+      </li>
+      <li class="item"><a href="#">Courses</a></li>
+      <li class="item has-submenu">
+        <a href="#">Students & Parents</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="#">Message to students</a></li>
+          <li class="subitem"><a href="#">Message to parents</a></li>
+          <li class="subitem"><a href="#">A day At Vyas</a></li>
+          <li class="subitem"><a href="#">Vyas vs no Vyas</a></li>
+        </ul>
+      </li>
+      <li class="item"><a href="#">Contact</a></li>
+      <li class="item"><a href="#">V-sat</a></li>
+      <li class="item button"><a href="#">Apply Now</a></li>
+      <li class="item button secondary"><a href="#">Pay Fee</a></li>
+      <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+      <li class="item"><a href="https://wa.me/message/FLAQUTPF7353K1" target="_blank"><i class="fab fa-whatsapp fa-7x" style="font-size:32px; color:white"></i></a></li>
+    </ul>
+  </nav>
+
+      <!-- END REVOLUTION SLIDER -->
+      <section id="home-section" style="margin-top:9vh">
+      
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  
+        
+        </ol>
+        <div class="carousel-inner">
+          
+          <div class="carousel-item active" style="width:100%">
+        
+          <img src="images/cd.jpeg" class="d-block w-100"  id= "img-preview" alt="">
+          </div>
+        
+             <div class="carousel-item">
+            <img src="images/neet2.jpeg" class="d-block w-100" id= "imgg"></div>
+            </div>
+          
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        </div>
+    
+      
+      <!-- END REVOLUTION SLIDER -->
+    </section>
+  
+  
+  <script>
+    const toggle= document.querySelector('.toggle');
+    const menu= document.querySelector('.menu');
+    function toggleMenu(){
+      if(menu.classList.contains("active"))
+      {
+        menu.classList.remove("active");
+        toggle.querySelector("a").innerHTML = "<i class= 'fas fa-bars'></i>";
+      }
+      else
+      {
+        menu.classList.add("active");
+        toggle.querySelector("a").innerHTML = "<i class = 'fas fa-times'></i>";
+      }
+
+    }
+    toggle.addEventListener('click', toggleMenu, false);
+//submenu
+const items = document.querySelectorAll('.item');
+function toggleItem()
+{
+  if(this.classList.contains("submenu-active"))
+
+  {
+    this.classList.remove("submenu-active");
+  }
+  else if(menu.querySelector(".submenu-active"))
+  {
+    menu.querySelector(".submenu-active").classList.remove(".submenu-active");
+    this.classList.add("submenu-active");
+  }
+  else 
+  {
+    this.classList.add("submenu-active");
+  }
+
+}
+for (let item of items)
+{
+  if(item.querySelector('.submenu'))
+  {
+    item.addEventListener('click', toggleItem, false);
+    item.addEventListener('keypress', toggleItem, false);
+  }
+}
+//close submenu form anywhere in the page
+function closeSubmenu(e)
+{
+  let isClickInside = menu.contains(e.target);
+  if(!isClickInside && menu.querySelector('.submenu-active'))
+  {
+    menu.querySelector('.submenu-active').classList.remove('submenu-active');
+  }
+}
+document.addEventListener('click', closeSubmenu, false);
+$(document).ready(function(){
+    $("#imgg").click(function(){
+      window.open("https://rzp.io/l/WlTsUbi");
+    });
+   });
+ $(window).on('load', function(){
+    $("#mymodal").modal('show');
+  });
+    $("#ff").submit(function(e) {
+    e.preventDefault();
+});
+  </script>
+</body>
+</html>
