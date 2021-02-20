@@ -110,7 +110,7 @@ s0.parentNode.insertBefore(s1,s0);
   }
   nav{
     background: #222;
-    padding:0 15px;
+    padding:0px 15px;
   }
   nav a{
     text-decoration: none;
@@ -132,6 +132,7 @@ s0.parentNode.insertBefore(s1,s0);
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  height: auto;
 }
 .menu li a{
   display: block;
@@ -140,7 +141,7 @@ s0.parentNode.insertBefore(s1,s0);
 }
 .menu li.subitem a{
   display: block;
-  padding:15px 5px;
+  padding:5px;
 }
 .toggle{
   font-size: 20px;
@@ -193,6 +194,7 @@ s0.parentNode.insertBefore(s1,s0);
   .menu{
     justify-content: center;
     z-index: 99999;
+    height: auto;
   }
   .logo{
     flex: 1;
@@ -210,7 +212,7 @@ s0.parentNode.insertBefore(s1,s0);
     order:2;
   }
   .menu li .button a{
-    padding:10px 15px;
+    padding:5px;
     margin:5px 0;
   }
   .button a{
@@ -233,7 +235,7 @@ s0.parentNode.insertBefore(s1,s0);
   }
 
 }
-@media all and (min-width:960px){
+@media all and (min-width:1030px){
 
   .item{
     order:1;
@@ -312,17 +314,7 @@ s0.parentNode.insertBefore(s1,s0);
 						color: #ff6200;
 						font-weight:bold;
 					}
-					.blink{
-						width:100px;
-						height: 20px;
-						background:red;
-						border-radius: 10px;
-						margin-top:-35px !important;
-						text-align: center;
-						color:white;
-						margin-left:50px;
-
-					}
+					
 					#pp{
 						display: none;
 					}
@@ -371,15 +363,10 @@ s0.parentNode.insertBefore(s1,s0);
                         #date{
                         	width:80% !important;
                         }
-                        .modal{ 
-                        margin-top:12vh; }
+                       
 					}
 				}
-					@media (max-width:375px){
-						 .modal{ 
-                        margin-top:12vh; }
-					}
-					
+										
 					
 				</style>
 <!------------------------------------------Chat Box end--------------------------------------------------------->
