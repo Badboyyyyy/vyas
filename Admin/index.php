@@ -9,7 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="cloud.js"></script>
+
   <link rel="stylesheet"  href="style.css">
 </head>
 <style>
@@ -49,7 +49,7 @@
     <li><a data-toggle="modal" href="#myModal">Slider</a></li>
     <li><a data-toggle="pill" href="#record">Registered Students</a></li>
     <li><a data-toggle="pill" href="#record2">Enquire Student</a></li>
-    <li><a data-toggle="pill" href="#menu3">News</a></li>
+    <li><a data-toggle="pill" href="#news">News</a></li>
   </ul>
   
   <a href="#" class="logout">Logout</a>
@@ -68,6 +68,32 @@
   		<button type="button" class="btn btn-success btn-lg" id="load_data2">Load Data </button>
  	     <div id= "employee_table2"></div>
   	</div>
+  	<div class="tab-pane" id="news">
+  		<div class= "container">
+  			<h1>Post News</h1>
+  			<form method="post" action="../test.php" enctype="multipart/form-data"> 
+  			<div class="form">
+  				<div class="form-group">
+  					<label>Please enter title</label>
+  					<input type="text" name="title" class="form-control">
+  				</div>
+  				<div class="form-group">
+          		<label class="custom-file-upload">Upload Image</label>
+          		<input type="file" id ="file-upload" name="newsimage" class="">
+          	</div>
+  				<div class="form-group">
+  					<label>Enter Url</label>
+  					<input type="text" name="newsurl" class="form-control" >
+  				</div>
+  				<div class="control-group">
+  					<input type="submit" name="news" class="btn btn-success">
+  				</div>
+
+  			</div>
+  		</form>
+  		</div>
+  	</div>
+
   </div>
  
 	
@@ -86,12 +112,13 @@
         
         <!-- Modal body -->
         <div class="modal-body">
-          <form>
+          <form action="../test.php" method="post" enctype="multipart/form-data">
           	<div class="form-group">
           		<label class="custom-file-upload">Upload Image</label>
-          		<input type="file" id ="file-upload" name="" class="">
-          		<img src="" id="img-preview">
+          		<input type="file" id ="file-upload" name="image" class="">
           	</div>
+          	<div class="form-group">
+          		<input type="submit" value="submit" name="submit" class="form-control btn-success">
           </form>
         </div>
         
@@ -115,7 +142,7 @@
 				dataType:"text",
 				success:function(data){
 					var employee_data = data.split(/\r?\n|\r/);
-					var table_data = '<table class="table table-bordered bg-dark text-white text-center table-stripped">';
+					var table_data = '<table class="table table-bordered bg-dark text-white text-center table-responsive table-stripped">';
 					for (var count=0; count<employee_data.length; count++)
 					{
 						var cell_data = employee_data[count].split(",");
@@ -173,32 +200,7 @@ $("#load_data2").click(function() {
 
 
 	});
-	var CLOUDINARY_URL = "https://api.cloudinary.com/v1_1/dpfvooxcp/upload";
-	var CLOUDINARY_UPLOAD_PRESET = "dwc2sn1g"
-	var imgPreview = document.getElementById('img-preview');
-	var fileUpload = document.getElementById('file-upload');
 	
-	fileUpload.addEventListener('change', function(event) {
-		var file = event.target.files[0];
-		var formData = new FormData();
-	formData.append('file', file);
-	formData.append('upload_preset', CLOUDINARY_UPLOAD_PRESET);
-		axios({
-         url : CLOUDINARY_URL, 
-         method : 'POST',
-         headers: {
-         	'Content-Type' : 'application/x-www-form-urlencoded'
-         },
-         data : formData
-     }).then(function (res){
-
-     	imgPreview.src = res.data.secure_url;
-
-     }).catch(function (err){
-
-     })
-	
-	});
 function openNav() {
   document.getElementById("mySidenav").style.width = "350px";
   

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,20 +14,28 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+<style>
+	
+	.admin{
+		display: flex;
+		height: 100vh;
+		width:100vw;
+		margin:auto;
+		justify-content: center;
+		align-items: center;
+	}
+</style>
 
 </head>
 <body>
-	<div class="container">
+	
 		<div class="admin">
 			<form name="form" method="post" action="#">
-
-<div class="container col-md-4">
 
 <h3 class="text-center text-success">Login page</h3>
 <div class="form-group">
 <label>Email</label>
-<input type="text" name="user"class="form-control">
+<input type="text" name="user" class="form-control">
 </div>
 
 
@@ -39,12 +48,12 @@
 
 
 	
-</div>
+
 	
 </form>
 
 		</div>
-	</div>
+	
 <?php
 $conn = mysqli_connect("localhost","root","");
 mysqli_select_db($conn, 'vyas');
@@ -56,18 +65,19 @@ $user=$_POST['user'];
 
 $pass=$_POST['pass'];
 
-$insert=("INSERT INTO `vyas` ( `user`, `pass`) VALUES ('$user', '$pass ');");
-$q = mysqli_query($conn, $insert);
+  if($user == "vyas" && $pass ==1234)
+
+  {
+  	header("location:index.php");
+  }
+
+  	else
+  	{
+  		echo '<script>alert("Please enter correct details"); </script>';
+  
+  	}
 
 
-if ($q) {
- echo '<script> alert("login successfully");</script>';
- header('location:index.php');
- 
-}
-else{
-	echo "Failed try again";
-}
 
 }
 ?>
