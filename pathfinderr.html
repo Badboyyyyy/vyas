@@ -107,15 +107,7 @@ s0.parentNode.insertBefore(s1,s0);
 .navbar-nav > li > a i{
 	color:#ffffff !important;
 }
-              .carousel-indicators li {
-				    width: 12px;
-				    height: 12px;
-				    border-radius:50%;
-				    background-color: #404040;
-               }
-				.carousel-indicators{
-					bottom:-50px;
-				}
+              
 					#navtab li{
 						margin-right:10px;
 						background-color:#f5f5f5;
@@ -132,20 +124,8 @@ s0.parentNode.insertBefore(s1,s0);
 						color: #ff6200;
 						font-weight:bold;
 					}
-					.blink{
-						width:100px;
-						height: 20px;
-						background:red;
-						border-radius: 10px;
-						margin-top:-35px !important;
-						text-align: center;
-						color:white;
-						margin-left:50px;
-
-					}
-					#pp{
-						display: none;
-					}
+					
+					
 					@media (max-width:768px)
 
 					{
@@ -182,13 +162,189 @@ s0.parentNode.insertBefore(s1,s0);
                          	position: relative;
                          	top:-10px;
                          }
-                         #pp {
+                         #pp{
                          	display: block;
                          }
-
 					}
+				
+nav{
+    background: #fff;
+    color:black;
+    padding:0 15px;
+  }
+  nav a{
+    text-decoration: none;
+    color:white;
+  }
+ .menu, .submenu{
+  list-style: none;
+ }
+.logo , .item, .item .button{
+  padding:1rem;
+}
+.item:not(.button) a:hover,
+.item a:hover::after{
+  color:#d97e07;
+  font-weight: 1000;
+}
+/* Mobile viwe*/
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li a{
+  display: block;
+  padding:  5px;
+  color:black;
+  font-weight: 400;
+
+}
+.menu li.subitem a{
+  display: block;
+  padding:5px;
+}
+.toggle{
+  font-size: 20px;
+  order:1;
+}
+.item.button{
+  order:2;
+}
+.item{
+  order:3;
+  width:100%;
+  text-align:center;
+  display: none;
+
+}
+.active .item{
+
+  display: block;
+}
+.button.secondary{
+  border-bottom:2px solid #444;
+}
+/* Style Submenu */
+.submenu{
+  display: none;
+}
+.submenu-active .submenu{
+  display: block;
+  padding:10px;
+}
+.has-submenu > a::after{
+  font-family: "font Awesome 5 Free";
+  font-size: 14px;
+  line-height: 6px;
+  font-weight: 900;
+  content:"\f078";
+  padding:0.4rem;
+  color:black !important;
+  text-decoration: none !important;
+}
+.subitem a{
+  padding:10px;
+  
+}
+.submenu-active {
+  background-color:#fff;
+  border-radius:3px;
+}
+.events-post{
+  margin:2em;
+}
+.submenu li:hover .submenu2{
+  opacity: 1;
+}
+@media all and (min-width:1200px){
+  
+  .menu{
+    justify-content: center;
+    z-index: 99999;
+  }
+  .logo{
+    flex: 1;
+  }
+  .item.button{
+     width:auto;
+     order:1;
+    display: block;
+   
+
+  }
+  .toggle{
+    flex:1;
+    text-align: right;
+    order:2;
+  }
+  .menu li .button a{
+    padding:10px 15px;
+    margin:5px 0;
+  }
+ 
+  .button.secondary{
+    border:0px;
+  }
+  .button.secondary a{
+     background:transparent;
+     
+  }
+  .button a:hover{
+    text-decoration: none;
+  }
+  .button:not(.secondary)a:hover{
+    background: royalblue;
+    border:darkblue;
+  }
+   #secsub a:hover .submenu2{
+    display: block;
+  }
+
+}
+@media all and (min-width:1370px){
+  #sub2{
+    display:block; 
+    position:absolute; 
+    left:110%; 
+    list-style: none;
+     padding:20px; 
+     background:#fff;
+     display: none;
+  }
+  .item{
+    order:1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+  .button
+  {
+    order: 2;
+  }
+  .submenu-active .submenu{
+    display: block;
+    position: absolute;
+    left: 0px;
+    top:68px;
+    background: #fff;
+    color:black;
+  }
+  .toggle{
+    display: none;
+  }
+  .submenu-active{
+    border-radius:0px;
+
+  }
+  #secsub a:hover .submenu2{
+    display: block;
+  }
+}
 					
 				</style><!------------------------------------------Chat Box end--------------------------------------------------------->
+
 <body>
 		
 	
@@ -197,144 +353,53 @@ s0.parentNode.insertBefore(s1,s0);
          <!--------------------------------------------------Fixed Apply now end----------------------------------------->
 		
 		<!-- Header==================================================-->
-		<header>
-		
-			<nav class="navbar navbar-expand-lg fixed-top" id="mnav">
-			
+		<nav class="fixed-top">
+    <ul class="menu">
+      <li class="logo"><a href="index.html"><img src="images/edifi.png.png" style="width:130px"></a></li>
+      <li class="item"><a href="about.html">About</a></li>
+      <li class="item has-submenu"><a href="#">Why Vyas</a>
+         <ul class="submenu">
+            <li class="subitem"><a href="ideas.html">Idea Behind Vyas</a></li>
+            <li class="subitem"><a href="edge.html">Vyas Edge</a></li>
+        </ul>
+      </li>
+      <li class="item has-submenu"><a href="#">Courses Fee</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="blog-grid-rightsidebar.html">Fee Classroom Program</a></li>
+          <li class="subitem"><a href="blog-list-rightsidebar.html">Web Scholarship</a></li>
+        </ul>
+      </li>
+      <li class="item has-submenu"><a href="#">Courses</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="#">Classroom</a></li>
 
-					<a class="navbar-brand" href="index.html">
-						<img src="images/edifi.png.png" id= "logo" style="width:160px; height:auto" alt="">
-					</a>
+          <li class="item has-submenu" id="secsub"><a href="#" onmouseover="dis()" onmousemove="hid()">Merathan</a>
+            <ul class="submenu" id="sub2" style="display: none">
+              <li class="subitem"><a href="iit.html">IIT</a></li>
+              <li class="subitem"><a href="neet.html">Neet</a></li>
+            </ul>
 
-					<a href="#navmob" class="mobile-nav-toggle" data-toggle="collapse" > 
-						<span></span>
-					</a>
+          </li>
+        </ul>
+      </li>
+      <li class="item has-submenu">
+        <a href="#">Students & Parents</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="blog.html">Message to students</a></li>
+          <li class="subitem"><a href="messagetoparent.html">Message to parents</a></li>
+          <li class="subitem"><a href="dayatvyas.html">A day At Vyas</a></li>
+          <li class="subitem"><a href="vyas-vs-novyas.html">Vyas vs no Vyas</a></li>
+        </ul>
+      </li>
+      <li class="item"><a href="contact.html">Contact</a></li>
+      <li class="item"><a href="https://pages.razorpay.com/pl_GOHlmzCwwv04Au/view">V-sat</a></li>
+      <li class="item button btn btn-primary p-1 m-2" style="border-radius:10px"><a href="form/form.php">Apply Now</a></li>
+      <li class="item button  btn btn-success p-1" style="border-radius:10px"><a href="https://rzp.io/l/WlTsUbi">Pay Fee</a></li>
+      <li class="toggle"><a href="#"><i class="fas fa-bars" style="color:black !important"></i></a></li>
+      <li class="item"><a href="https://wa.me/message/FLAQUTPF7353K1" target="_blank"><i class="fab fa-whatsapp fa-7x" style="font-size:32px; color:white"></i></a></li>
+    </ul>
+  </nav>
 
-					<div class="collapse navbar-collapse">
-						<ul class="navbar-nav mr-auto">
-							<li class="drop-link">
-								<a class="active" href="about.html">AboutUs</a>
-							</li>
-							<li class="drop-link">
-								<a href="#" class="">WhyVyas<i class="fa fa-angle-down"></i></a>
-								<ul class="dropdown">
-									<li><a href="ideas.html"><sapn style="color:black !important">Idea Behind Vyas</sapn></a></li>
-									
-									<li><a href="edge.html" style="color:black">Vyas Edge</a></li>
-								</ul>
-							</li>
-							<li class="drop-link">
-								<a href="">Fees<i class="fa fa-angle-down"></i></a>
-								<ul class="dropdown">
-											
-											<li><a href="blog-grid-rightsidebar.html">Fee Classroom Program</a></li>
-											
-											<li><a href="blog-list-rightsidebar.html">Scholarship Web</a></li>
-										</ul>
-									
-							</li>
-							<li class="drop-link">
-								<a class="courses.html" href="courses.html">Courses</a>
-							</li>
-							<li class="drop-link">
-								<a href="">Students&Parents<i class="fa fa-angle-down"></i></a>
-								<ul class="dropdown">
-									<li><a href="blog.html">Message to Students</a></li>
-									<li><a href="messagetoparents.html">Message to Parents</a></li>
-									<li><a href="dayatvyas.html">A Day at Vyas</a></li>
-									<li><a href="vyas-vs-novyas.html">Vyas vs No Vyas</a></li>
-								</ul>
-									</li>
-									
-							</li>
-							<li class="drop-link">
-								<a href="contact.html">ContactUs<i class=""></i></a>
-								
-							</li>
-							<li class="drop-link">
-								
-							<a href="https://rzp.io/l/z43ppg1nV"><b>V-Sat</b></a>
-							<div class="blink" id="#blink"><span style="font-weight:bold"> Pay Online</span> </div>
-						</li>
-							<li class="drop-link">
-								<a href="">VyasOnline<i class="fa fa-angle-down"></i></a>
-								<ul class="dropdown">
-									<li><a href="https://online.vyasedification.com/">IIT-JEE Courses</a></li>
-									
-								</ul>
-									</li>
-									<li><a href="https://forms.gle/yFkV6HrR3YQwnwPt5">Career</a></li>
-							<li><a href="https://wa.me/message/FLAQUTPF7353K1" target="_blank"><i class="fab fa-whatsapp fa-7x" style="font-size:32px; color:white"></i></a></li>
-													<a href="form/form.php" class="btn btn-success" style="height:50px; margin-top:30px; padding:13px">Apply Now</a>
-						<a href="https://rzp.io/l/WlTsUbi" class="btn btn-primary" style="height:50px; margin-top:30px; margin-left:5px; padding:14px">Pay Online</a>
-						</ul>
-						
-					</div>
-				
-			</nav>
-				<div class="collapse navbar-collapse" id="navmob">
-				
-				<nav class="mobile-nav">
-					<ul class="navbar-nav mr-auto">
-							<li class="drop-link">
-								<a class="active" href="about.html">AboutUs</a>
-							</li>
-							<li class="drop-link">
-								<a class="">WhyVyas<i class="fa fa-angle-down"></i></a>
-								<ul class="dropdown">
-									<li><a href="ideas.html">Idea Behind Vyas</a></li>
-									
-									<li><a href="edge.html">Vyas Edge</a></li>
-								</ul>
-							</li>
-							<li class="drop-link">
-								<a href="">Fees<i class="fa fa-angle-down"></i></a>
-								<ul class="dropdown">
-											
-											<li><a href="blog-grid-rightsidebar.html">Fee Classroom Program</a></li>
-											
-											<li><a href="blog-list-rightsidebar.html">Scholarship Web</a></li>
-										</ul>
-									
-							</li>
-							<li class="drop-link">
-								<a class="courses.html" href="courses.html">Courses</a>
-							</li>
-							<li class="drop-link">
-								<a href="#">Students&Parents<i class="fa fa-angle-down"></i></a>
-								<ul class="dropdown">
-									<li><a href="blog.html">Message to Students</a></li>
-									<li><a href="messagetoparents.html">Message to Parents</a></li>
-									<li><a href="dayatvyas.html">A Day at Vyas</a></li>
-									<li><a href="vyas-vs-novyas.html">Vyas vs No Vyas</a></li>
-								</ul>
-									</li>
-									
-							</li>
-							<li class="drop-link">
-								<a href="contact.html">ContactUs<i class=""></i></a>
-								
-							</li>
-							<li class="drop-link">
-								
-							<a href="https://rzp.io/l/z43ppg1nV"><b>V-Sat</b></a>
-							<div class="blink" id="#blink"><span style="font-weight:bold"> Pay Online</span> </div>
-						</li>
-							<li class="drop-link">
-								<a href="">VyasOnline<i class="fa fa-angle-down"></i></a>
-								<ul class="dropdown">
-									<li><a href="https://online.vyasedification.com/">IIT-JEE Courses</a></li>
-									
-								</ul>
-									</li>
-									<li><a href="https://forms.gle/yFkV6HrR3YQwnwPt5">Career</a></li>
-							<li><a href="https://wa.me/message/FLAQUTPF7353K1" target="_blank"><i  class="fab fa-whatsapp fa-7x" style="font-size:32px; color:white"></i></a></li>
-						</ul>
-				</nav>
-			</div>
-  
-			
-		</header>
 			<!-- End Header -->
 
 		<!-- page-banner-section 
@@ -595,6 +660,73 @@ This two-year course helps students to develop a solid foundation for competitiv
 	</div>
 	<!-- End Container -->
 
+	<script>
+	
+  function dis(){
+    document.getElementById("sub2").style.display= "block";
+  }
+  function hid()
+  {
+    document.getElementById("sub2").style.dispaly= "none";
+  }
+
+
+    const toggle= document.querySelector('.toggle');
+    const menu= document.querySelector('.menu');
+    function toggleMenu(){
+      if(menu.classList.contains("active"))
+      {
+        menu.classList.remove("active");
+        toggle.querySelector("a").innerHTML = "<i class= 'fas fa-bars'></i>";
+        
+      }
+      else
+      {
+        menu.classList.add("active");
+        toggle.querySelector("a").innerHTML = "<i class = 'fas fa-times'></i>";
+      }
+
+    }
+    toggle.addEventListener('click', toggleMenu, false);
+//submenu
+const items = document.querySelectorAll('.item');
+function toggleItem()
+{
+  if(this.classList.contains("submenu-active"))
+
+  {
+    this.classList.remove("submenu-active");
+  }
+  else if(menu.querySelector(".submenu-active"))
+  {
+    menu.querySelector(".submenu-active").classList.remove(".submenu-active");
+    this.classList.add("submenu-active");
+  }
+  else 
+  {
+    this.classList.add("submenu-active");
+  }
+
+}
+for (let item of items)
+{
+  if(item.querySelector('.submenu'))
+  {
+    item.addEventListener('click', toggleItem, false);
+    item.addEventListener('keypress', toggleItem, false);
+  }
+}
+//close submenu form anywhere in the page
+function closeSubmenu(e)
+{
+  let isClickInside = menu.contains(e.target);
+  if(!isClickInside && menu.querySelector('.submenu-active'))
+  {
+    menu.querySelector('.submenu-active').classList.remove('submenu-active');
+  }
+}
+document.addEventListener('click', closeSubmenu, false);
+</script>
 	
 	
 </body>
