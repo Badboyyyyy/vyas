@@ -9,6 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
   <link rel="stylesheet"  href="style.css">
 </head>
@@ -52,13 +53,40 @@
     <li><a data-toggle="pill" href="#news">News</a></li>
   </ul>
   
-  <a href="#" class="logout">Logout</a>
+  <a  class="logout" onclick="logout()" style="cursor: pointer;" >Logout</a>
 </div>
 </div>
 <div class="col-9">
 <div id="main">
 	
 	<span style="font-size:30px; cursor:pointer" id = "show" onclick="openNav()">&#9776; </span>
+  <div class="delete">
+    <form action="" method ="post">
+      <h1>Delete Image</h1>
+      <input type="text" name="id" placeholder="Please enter id">
+      <input type="submit" class="btn btn-outline-danger" name="delete" value="Delete">
+    </form>
+  </div>
+  <?php
+
+$conn = mysqli_connect("localhost", "root", "", "vyas");
+if(isset($_POST['delete']))
+{
+  $id = $_POST['id'];
+ $query = "DELETE FROM `slider` WHERE id= '$id'";
+$result= mysqli_query($conn, $query);
+if($result)
+{
+  echo '<script>swal("success", "Image Deleted successfully", "success"); </script>';
+}
+else
+{
+  echo '<script>swal("Sorry", "try again", "error"); </script>';
+}
+
+}
+
+?>
 	<div class="tab-content">
   	<div class="tab-pane fade" id="record">
   		<button type="button" class="btn btn-success btn-lg" id="load_data">Load Data </button>
@@ -216,11 +244,20 @@ function closeNav() {
 }
 
 
-
+function logout(){
+ var a= confirm("Do you want to logout")
+ if(a)
+ {
+  window.location.replace("vyas.php");
+ }
+ else
+  window.location.href("index.php");
+}
 
 
 
 </script>
+
    
 </body>
 </html>
