@@ -95,7 +95,10 @@ s0.parentNode.insertBefore(s1,s0);
   radial-gradient(#25d366 60%,transparent 0);
 }
 
-
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
  li > a i{
   color:#ffffff !important;
 }
@@ -414,43 +417,35 @@ s0.parentNode.insertBefore(s1,s0);
 
       <!-- END REVOLUTION SLIDER -->
       <section id="home-section" style="margin-top:12vh">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/iii.jpeg" class="d-block"  style="width:100vw;">
+       
+    </div>
+    <div class="carousel-item">
+      <img src="images/caa.jpeg" class="d-block"  style="width:100vw;">
+        
+    </div>
+    <div class="carousel-item">
+      <img src="images/iiii.jpeg">
       
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          
-              <div class="carousel-item active" style="width:100%">
-            
-              <img src="images/caa.jpeg" class="d-block"  style="width:100vw;" id= "img-preview" alt="">
-              </div>
-            
-                 <div class="carousel-item">
-                <img src="iii.jpeg" class="d-block w-100" style="width:100vw;"></div>
-                </div>
-                 <div class="carousel-item">
-                <img src="iiii.jpeg" class="d-block w-100" style="width:100vw;"></div>
-                </div>
-                <div class="carousel-item">
-                <img src="images/neet2.jpeg" class="d-block w-100" style="width:100vw;"></div>
-                </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-        </div>
-    
-      
-      <!-- END REVOLUTION SLIDER -->
-    </section>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+       </section>
     <section class="feature-section" style="padding-top:1vh">
       <div class="container">
         <div class="feature-box">
